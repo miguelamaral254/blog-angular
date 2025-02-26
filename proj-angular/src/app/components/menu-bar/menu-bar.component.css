@@ -1,21 +1,21 @@
 .container__menu-bar {
-  background-color: #0000;
-  padding: 10px 20px;
+  background-color: #000000;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 
 .container__menu-bar > ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-left: auto;
 }
 
 .container__menu-bar > ul > li {
@@ -23,8 +23,17 @@
   list-style: none;
 }
 
+.menu-logo {
+  margin-right: 20px;
+}
+
+.flamengo-logo {
+  width: 100px;
+  height: auto;
+}
+
 .container__menu-bar .menu-link {
-  color: #ecf0f1;
+  color: #E60012;
   text-decoration: none;
   font-weight: 500;
   background-color: transparent;
@@ -32,13 +41,13 @@
 }
 
 .container__menu-bar .menu-link:hover {
-  color: #3498db;
+  color: #ffffff;
   text-decoration: underline;
   background-color: transparent;
 }
 
 .container__menu-bar .separator {
-  color: #ecf0f1;
+  color: #E60012;
   font-size: 20px;
 }
 
@@ -46,6 +55,11 @@
   outline: none;
 }
 
-.container__menu-bar app-menu-title {
-  margin-right: auto;
+.menu-logo-right {
+  margin-left: 20px;
+}
+
+.logo-right {
+  width: 100px;
+  height: auto;
 }

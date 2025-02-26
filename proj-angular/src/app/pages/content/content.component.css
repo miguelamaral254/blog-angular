@@ -1,29 +1,99 @@
-.container__content{
-
+.container__content {
   width: 100%;
-  height: 100vh;
-
+  min-height: 100vh;
   margin-top: 20px;
-
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  padding:  20px;
 }
 
-.content__cover > img{
-  border:5px solid rgb(144, 144, 144);
-  border-radius: 5px;
-  width: 500px;
-  min-width: 500px;
+.content__card {
+  background-color: black;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.content__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: black;
+
+}
+
+.content__card .content__cover > img {
   height: 300px;
+  border-bottom: 5px solid #BDC3C7;
 }
 
-.content__description{
-  margin-top: 15px;
+.content__card .content__title {
+  margin: 20px;
+  background-color: black;
+
+  font-size: 26px;
+  text-align: center;
+  color: #2C3E50;
+  font-family: 'Lora', Georgia, serif;
+  font-weight: bold;
 }
 
-.content__description > p{
-  margin-top: 20px;
-  color: rgb(198, 197, 197);
+.content__card .content__description {
+  background-color: black;
+  margin: 0 20px;
+  font-size: 16px;
+  color: #7F8C8D;
+  line-height: 1.6;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-align: justify;
+}
+
+.content__card .content__description a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.content__card .content__description a:hover {
+  text-decoration: underline;
+}
+
+.content__card .btn-voltar {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #3498DB;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.content__card .btn-voltar:hover {
+  background-color: #2980b9;
+  color:#fff
+}
+
+@media (max-width: 768px) {
+  .content__card .content__title {
+    font-size: 22px;
+  }
+
+  .content__card .content__description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .content__card .content__cover > img {
+    height: 250px;
+  }
 }

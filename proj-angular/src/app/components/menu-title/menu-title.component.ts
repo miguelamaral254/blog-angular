@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuBarComponent } from "../menu-bar/menu-bar.component";
 
 @Component({
   selector: 'app-menu-title',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: [
   './menu-title.component.css',
   './menu-title.responsive.component.css'
-  ]
+  ],
+  imports: [MenuBarComponent]
 })
 export class MenuTitleComponent implements OnInit {
 
